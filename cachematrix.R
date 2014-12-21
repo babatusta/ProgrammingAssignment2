@@ -21,7 +21,7 @@ makeCacheMatrix<-function(x=matrix()) {
            getInverse=getInverse)
 }
 
-#The second function calculates the inverse, but first it checks if the inverse, for the unchanged matrix, 
+#The second function actually calculates the inverse, but first it checks if the inverse, for the unchanged matrix, 
 #is "stored" by the first function.
 cacheSolve<-function(x,...) {
       Inverse<-x$getInverse()
